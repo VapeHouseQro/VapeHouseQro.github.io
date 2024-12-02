@@ -1,7 +1,6 @@
 const modalWaka = document.getElementById('modal-waka');
 const modalIplay = document.getElementById('modal-iplay');
 const modalAirfuze = document.getElementById('modal-airfuze');
-const modalNastyBar = document.getElementById('modal-nastybar');
 
 const wakaBtn = document.querySelector('.producto:nth-child(1)');
 const iplayBtn = document.querySelector('.producto:nth-child(2)');
@@ -30,9 +29,6 @@ airfuzeBtn.addEventListener('click', () => {
   openModal('airfuze');
 });
 
-nastybarBtn.addEventListener('click', () => {
-  openModal('nastybar');
-});
 
 const cerrarModales = document.querySelectorAll('.cerrar');
 
