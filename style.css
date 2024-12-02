@@ -61,44 +61,44 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-/* Sección Nosotros */
+/* us */
 .nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #f9f9f9; 
 }
 
 .nosotros-contenido {
-    max-width: 800px; /* Ancho máximo del recuadro */
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    line-height: 1.6; /* Mejor separación entre líneas */
-    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+    color: #333;
 }
 
 .nosotros-contenido strong {
-    color: #f39c12; /* Destaca el nombre del negocio */
+    color: #f39c12;
 }
 
-/* Productos */
+/* Products */
 .productos {
     display: flex;
-    flex-wrap: wrap; /* Permite que los productos ocupen varias líneas */
-    justify-content: center; /* Centra los elementos en cada fila */
-    gap: 20px; /* Espacio entre productos */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
     background-color: #f9f9f9;
 }
 
 .producto {
-    flex: 0 1 calc(45% - 20px); /* Cada producto ocupa el 45% del ancho menos el espacio del gap */
+    flex: 0 1 calc(45% - 20px);
     text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -132,7 +132,7 @@ nav ul li a:hover {
 
 /* Modal */
 .modal {
-    display: none; /* Ocultar por defecto */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -142,15 +142,15 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Inicialmente invisible */
-    transform: scale(0.8); /* Escalado hacia abajo para el efecto de apertura */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .modal.mostrar {
-    display: flex; /* Mostrar cuando se agrega la clase 'mostrar' */
-    opacity: 1; /* Hacer visible el modal */
-    transform: scale(1); /* Restaurar el tamaño normal */
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .modal-contenido {
@@ -226,14 +226,14 @@ nav ul li a:hover {
     color: #f39c12;
 }
 
-/* Sección Contáctanos */
+/* Contact */
 .contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px 20px;
-    background-color: #f0f0f0; /* Fondo ligeramente gris */
+    background-color: #f0f0f0;
     text-align: center;
 }
 
@@ -252,7 +252,7 @@ nav ul li a:hover {
 
 .btn-whatsapp {
     display: inline-block;
-    background-color: #25D366; /* Color verde de WhatsApp */
+    background-color: #25D366;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -264,7 +264,7 @@ nav ul li a:hover {
 }
 
 .btn-whatsapp:hover {
-    background-color: #1DA851; /* Verde más oscuro al pasar el cursor */
+    background-color: #1DA851;
 }
 
 /* Footer */
