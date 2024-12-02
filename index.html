@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="media/logo.png" alt="Vape House Logo">
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="media/slide3.jpg" alt="Slide 1">
+            <img src="media/slide1.jpg" alt="Slide 2">
+            <img src="media/slide4.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros">
+      <div class="nosotros-contenido">
+        <p>
+            "Somos <strong>Vape House</strong>, un negocio de distribución de vapes en todo México y entregas personales en todo Querétaro. Contamos con una amplia variedad de sabores para el gusto de todos."
+        </p>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <!-- Waka Modelos -->
+        <div class="producto" onclick="openModal('waka')">
+            <img src="media/product/waka.png" alt="Waka">
+            <h3>Waka</h3>
+            <p>Precio: <span>$320 - 520</span></p>
+            <p>Hits: <span>8000 - 27000</span></p>
+        </div>
+
+        <!-- Otros productos -->
+        <div class="producto" onclick="openModal('iplay')">
+            <img src="media/product/iplay.png" alt="iPlay">
+            <h3>iPlay</h3>
+            <p>Precio: <span>$300</span></p>
+            <p>Hits: <span>4000 - 6500</span></p>
+        </div>
+        <div class="producto" onclick="openModal('airfuze')">
+            <img src="media/product/airfuze.png" alt="Airfuze">
+            <h3>Airfuze</h3>
+            <p>Precio: <span>$400</span></p>
+            <p>Hits: <span>800</span></p>
+        </div>
+        <div class="producto" onclick="openModal('nastybar')">
+            <img src="media/product/nastybar.jpg" alt="Nasty Bar">
+            <h3>Nasty Bar</h3>
+            <p>Precio: <span>$550</span></p>
+            <p>Hits: <span>2000</span></p>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <div id="modal-waka" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('waka')">&times;</span>
+            <h2>Modelos de Waka</h2>
+            <div>
+              <br>
+                <p>Waka Pro</p>
+                <p>Precio: $320</p>
+                <p>Hits: 8000</p>
+                <p>Sabores: Menta, Uva, Fresa</p>
+                <br>
+                <p>Waka SoPro </p> 
+                <p>Precio: $370</p>
+                <p>Hits: 15000</p>
+                <p>Sabores: Mango, Melón, Limón</p>
+                <br>
+                <p>Waka Duo </p>
+                <p>Precio: $520</p>
+                <p>Hits: 27000</p>
+                <p>Sabores: Mango, Melón, Limón</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-iplay" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('iplay')">&times;</span>
+            <h2>Modelos de iPlay</h2>
+            <div>
+                <br>
+                <p>iPlay Box</p>
+                <p>Precio: $300</p>
+                <p>Hits: 4000</p>
+                <p>Sabores: Menta, Uva, Fresa</p>
+                <br>
+                <p>iPlay Pro </p>
+                <p>Precio: $300</p>
+                <p>Hits: 6500</p>
+                <p>Sabores: Mango, Melón, Limón</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-airfuze" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('airfuze')">&times;</span>
+            <h2>Sabores de Airfuze</h2>
+            <div>
+                <p>Airfuze: Precio: $600 | Hits: 4000 | Sabores: Menta, Uva, Fresa</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-nastybar" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('nastybar')">&times;</span>
+            <h2>Sabores de Nasty Bar</h2>
+            <div>
+                <p>Nasty Bar: Precio: $550 | Hits: 22000 | Sabores: Menta, Uva, Fresa</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contáctanos -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-contenido">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas o quieres realizar un pedido? Escríbenos directamente a través de WhatsApp.</p>
+            <a href="https://wa.me/524427520038?text=Hola,%20estoy%20interesado%20en%20sus%20productos" target="_blank" class="btn-whatsapp">
+                Enviar mensaje por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Todos los derechos reservados © 2024 Vape House
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
